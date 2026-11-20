@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 id="app-title">Practice To-Do</h1>
+    <p class="subtitle" id="app-subtitle"></p>
+
+    <form id="task-form">
+      <label for="task-input" class="visually-hidden">New task</label>
+      <input id="task-input" type="text" placeholder="What needs doing?" required autocomplete="off">
+      <button type="submit">Add task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+    <p id="empty-message" class="empty">No tasks yet. Add one above.</p>
+
+    <footer>
+      <span id="count"></span>
+      <button id="clear-done" type="button">Clear finished</button>
+    </footer>
+  </main>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
